@@ -47,41 +47,26 @@
 
 ## 🔑기술 스택
 
-### 🖥️Frontend 
-- ![TypeScript](https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white)
-- ![React](https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=white)
-      ![React-Query](https://img.shields.io/badge/reactquery-FF4154?style=flat-square&logo=reactquery&logoColor=white)
-      ![Axios](https://img.shields.io/badge/axios-DB5C3F?style=flat-square&logo=axios&logoColor=white)
-      ![Recoil](https://img.shields.io/badge/recoil-f26b00?style=flat-square&logo=recoil&logoColor=white)
-      ![Styled-Components](https://img.shields.io/badge/styledcomponents-DB7093?style=flat-square&logo=styledcomponents&logoColor=white)
-      ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=Tailwind%20CSS&logoColor=white)
-      ![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=Storybook&logoColor=white)
-- ![vite](https://img.shields.io/badge/vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+### 🖥️Android
+ ![Android Studio](https://img.shields.io/badge/Android%20Studio-%233DDC84?logo=androidstudio&logoColor=white)
+ ![Retrofit](https://img.shields.io/badge/Retrofit-%23009020)
+ ![Jetpack](https://img.shields.io/badge/Jetpack%20-%234285F4?logo=jetpackcompose&logoColor=white)
 <br/>
 
-#### TypeScript
-- 동적 타입 체크를 통한 코드 안정성 향상 및 오탈자를 방지합니다.
+#### Android OS
+- 가장 널리 사용되는 모바일 운영체제로 서비스 제공합니다.
 
-#### React
-- 가장 많이 사용되고 익숙한 라이브러리로, 개발 생산성을 위해 도입하였습니다.
-- 컴포넌트 기반 아키텍처: React는 UI를 컴포넌트로 나누어 개발하도록 돕는 컴포넌트 기반 아키텍처를 제공합니다. 이로써 코드를 재사용하고 유지보수하기 쉽습니다.
-- Virtual DOM: React의 가상 DOM은 성능을 최적화하고 브라우저 상의 DOM 조작을 최소화하여 빠른 웹 애플리케이션을 구축하는 데 도움을 줍니다.
+#### Clean Architecture
+- Domain Layer (비즈니스 로직, Usecase, Repository 포함), Data Layer (Repository 구현체, 데이터 입출력 Data Source, Entity 포함), Presentation Layer (MVI 패턴 사용) 
 
-#### Styled-Components
-- 컴포넌트 재사용이 편리하고 유지보수가 간편합니다.
-- 컴포넌트 수준에서 스타일링을 관리하는 효과적인 방법을 제공합니다.
+#### Dagger-Hilt
+- Clean Architecture의 각 계층에서 필요한 객체 생성 및 의존성 주입을 위한 Dagger-Hilt 사용합니다.
 
-#### Recoil
-- 전역 상태를 관리하기 위한 간단하고 직관적인 방법 제공하는 라이브러리입니다.
+#### Android Jetpack
+- ViewModel, Navigation, Flow, LiveData, Work Manager, Data Store, DataBinding, Compose 등을 포함하는 Android Jetpack 라이브러리 활용합니다.
 
-#### Tailwind CSS:
-- 클래스 기반 스타일링: Tailwind CSS는 클래스를 사용하여 스타일을 정의하므로 컴포넌트에서 쉽게 스타일을 적용할 수 있습니다.
-- 가독성 및 유지보수성: 명시적인 클래스 이름을 사용하므로 코드를 읽고 이해하기 쉽습니다. 또한 일관된 디자인을 적용하기 용이합니다.
-- 편리한 반응형 디자인: Tailwind CSS는 반응형 디자인을 쉽게 적용할 수 있도록 도와줍니다.
-
-#### Axios:
-- HTTP 요청 라이브러리: Axios는 HTTP 요청을 쉽게 보내고 응답을 처리할 수 있는 라이브러리로, RESTful API와 통신하기 위한 강력한 도구입니다.
-- Promise 기반: Axios는 Promises를 사용하여 비동기 작업을 처리하므로 코드가 간결하고 오류 처리가 효율적입니다.
+#### Retrofit:
+- RESTful API 호출을 위한 Retrofit 사용합니다.
   
 <br/><br/>
   
@@ -145,15 +130,10 @@
 
 ## 🔖 Naming Rules
 ### 🖥️Frontend
-- component : **PascalCase**
-  - 최상위 태그 : **-Layout**
-  - 차상위 태그 : **-Container**
-- constant : **SNAKE_CASE**
-- 변수 : **camelCase**
-- recoil atom : **camelCaseState**
-- Interface
-  - props : **PascalCaseProps**
-  - api response : **PascalCaseResponse**
+## 🔖 Naming Rules
+- 파일 : CamelCase + SnakeCase
+- 클래스명 : PascalCase
+- 함수/변수명 : CamelCase
 
 ### 💻Backend
 - **Packages**

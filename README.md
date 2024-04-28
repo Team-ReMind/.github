@@ -130,7 +130,6 @@
 
 ## 🔖 Naming Rules
 ### 🖥️Frontend
-## 🔖 Naming Rules
 - 파일 : CamelCase + SnakeCase
 - 클래스명 : PascalCase
 - 함수/변수명 : CamelCase
